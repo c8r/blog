@@ -151,7 +151,7 @@ Our rationale for using JSX syntax is:
 
 ## Just a start
 
-We recognize that this format may not suite all needs but are dedicated to better interoperability between code and design tools.
+We recognize that this format may not suit all needs but are dedicated to better interoperability between code and design tools.
 If other, better or more popular data formats arise, we will gladly support whatever the community moves towards and continue to build tools that help designers and developers work together.
 
 ---
