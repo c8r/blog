@@ -142,12 +142,13 @@ By default, each Iso file is a pure component and helps encourage some of the id
 
 Our rationale for using JSX syntax is:
 
-- It is used in component-based libraries such as React and Vuejs
-- Most UI is rendered as a nested tree structure, e.g. HTML
-- XML is excellent at representing tree structures and can help show where patent elements end
-- JSX can also be represented in a JSON object with type, props, and children properties
-- In addition to the declarative nature of XML/HTML, JSX adds a familiar pattern for functional composition
-- Read more about the authors of JSX’s rationale
+- It is used in component-based libraries such as React and Vuejs.
+- Most UI is rendered as a nested tree structure, e.g. HTML.
+- XML is excellent at representing tree structures and can help show where parent elements end.
+- JSX can also be represented as a JSON object with `type`, `props`, and `children` properties.
+- In addition to the declarative nature of XML/HTML, JSX adds a familiar pattern for functional composition.
+
+Read more about the authors of JSX’s rationale here: [JSX Specification][jsx]
 
 ## Just a start
 
@@ -158,7 +159,7 @@ If other, better or more popular data formats arise, we will gladly support what
 
 I'd like to thank the following for sharing their ideas and helping inspire some of the thinking behind our tools:
 
-Nicole Sullivan, Nicholas Gallagher, Guillermo Rauch, Diana Mounter, Wilson Miner, Dan Eden, Bryn Jackson, Brian Lovin, The React team, Dan Abrimov, Storybook, Figma, Interplay App
+Nicole Sullivan, Nicholas Gallagher, Guillermo Rauch, Diana Mounter, Wilson Miner, Dan Eden, Bryn Jackson, Brian Lovin, Max Stoiber, Glen Maddern, Mark Dalgleish, Dan Abrimov, The React team, Storybook, Figma, Interplay App
 
 Further Reading:
 
