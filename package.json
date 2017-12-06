@@ -1,0 +1,20 @@
+{
+  "name": "@compositor/blog",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Writing from the team at Compositor",
+  "scripts": {
+    "publish": "echo \"requires token from medium.com\"",
+    "_publish": "markdown-to-medium"
+  },
+  "author": "Brent Jackson",
+  "contributors": [
+    "Adam Morse <adam@compositor.io>",
+    "John Otander <john@compositor.io>",
+    "Brent Jackson <jackson@compositor.io>"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "markdown-to-medium": "^1.4.1"
+  }
+}
