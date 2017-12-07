@@ -14,8 +14,8 @@ tags:
 
 # Open Formats
 
-At Compositor, we want you to have full access to the things you create with our tools.
-One way we’re trying to do this is by offering open and transparent data formats and open source tools to work with those formats.
+At Compositor, we want you to have complete control over the things you create with our tools.
+One way we’re trying to do this is by using open and transparent data formats and offering open source tools to integrate with our apps.
 
 Developers try to avoid tools that lead to lock-in,
 and we think design tools should produce output that can be consumed in a variety of ways.
@@ -24,17 +24,17 @@ One of the guiding principles for our products is:
 
 > Anything in. Anything out.
 
-We’ve currently focused the beta versions of our [Lab][lab] and [Iso][iso] apps around React because of its wide adoption and the wonderful community around it,
-but we'd like our tools to integrate with whatever front-end tech stack your team uses, whether it’s styled-components, CSS Modules, a CSS library in a Rails app, Vuejs, Angular, or whatever new framework sits around the corner.
+We’ve currently focused the beta versions of our [Lab][lab] and [Iso][iso] apps around React because of its wide adoption and the wonderful community around it.
+But we'd like our tools to integrate with whatever front-end tech stack your team uses, whether it’s styled-components, CSS Modules, a CSS library in a Rails app, Vuejs, Angular, or whatever new framework sits around the corner.
 
-You might’ve taken a peek into the theme.json, lab.json, or JSX files created with our apps, and, while the formats are modeled around similar component concepts to React, we want to remain somewhat agnostic to technology stacks.
+You might’ve taken a peek into the `theme.json`, `lab.json`, or JSX files created with our apps, and, while the formats are modeled around similar component concepts to React, we want to remain somewhat agnostic to technology stacks.
 
 Today, we’re open sourcing [lab-cli][lab-cli] which is the module used in Lab to export to different React CSS-in-JS libraries
 and a command line utility for integrating Lab files with your teams build process.
 
 ## Theme
 
-The theme.json file created by Lab is a plain object intended to store any shared stylistic constants for your apps.
+The `theme.json` file created by Lab is a plain object intended to store any shared stylistic constants for your apps.
 Currently, the app stores typographic, layout, and color constants, with plans for more in-app integrations in the future.
 Since this is stored as JSON, you can import this theme into other components not created in Lab, and it works well with most CSS-in-JS ThemeProviders.
 Additionally, you can add any arbitrary values to the theme that Lab doesn't currently cover.
@@ -89,7 +89,7 @@ We'd rather rely on standards and conventions than reinvent the wheel for UI ele
 ### Style
 
 The style object is a static, plain object based on CSS.
-Keys can either be camelCased or hyphenated,
+Keys can either be camelCased or kebab-cased,
 and pseudoclasses are supported with nested objects.
 
 ### Props
@@ -108,7 +108,7 @@ The `system` array is a list of keys that reference [styled-system][styled-syste
 We plan to rename this property and add support for references to any other custom style functions.
 
 Each referenced function takes `props` as an argument and returns a style object that is assigned to the static `style` object.
-The `props` argument will also receive the `theme` object from theme.json,
+The `props` argument will also receive the `theme` object from `theme.json`,
 which allows styles to reference style constants.
 These functions are based on conventions found in other CSS-in-JS libraries such as [styled-components][styled-components].
 
@@ -124,7 +124,7 @@ In addition to the style component properties above, the following are added as 
 
 One of the key features of using a component-based UI system is composition.
 In Lab, you can create composite components that are made up of other components.
-In Iso, each `.jsx` file is a composite component and is interchangeable with the lab.json composite component definition.
+In Iso, each `.jsx` file is a composite component and is interchangeable with the `lab.json` composite component definition.
 
 In Lab, composite components are defined in JSON, with the following properties:
 
@@ -133,10 +133,10 @@ In Lab, composite components are defined in JSON, with the following properties:
 - `jsx`: a JSX string representing the element structure of the component
 - `propTypes`: (planned) an object of prop type definitions, referenced by string
 
-In Iso, each file works similarly, but the entire lab.json component library is available in scope, rather than requiring imports to be explicitly defined.
+In Iso, each file works similarly, but the entire `lab.json` component library is available in scope, rather than requiring imports to be explicitly defined.
 The JSX file format uses [front-matter][front-matter] ([YAML][yaml] syntax at the beginning of the file) to define props for the component.
 Reserved prop names can be introduced to add additional functionality beyond static props.
-Currently, IMPORTS is used to explicitly define imports that are not included in the lab.json file.
+Currently, IMPORTS is used to explicitly define imports that are not included in the `lab.json` file.
 
 By default, each Iso file is a pure component and helps encourage some of the ideas presented in Guillermo Rauch’s Pure UI article.
 
@@ -157,9 +157,11 @@ If other, better or more popular data formats arise, we will gladly support what
 
 ---
 
-I'd like to thank the following for sharing their ideas and helping inspire some of the thinking behind our tools:
+We'd like to thank the following for sharing their ideas and helping inspire some of the thinking behind our tools:
 
 Nicole Sullivan, Nicholas Gallagher, Guillermo Rauch, Diana Mounter, Wilson Miner, Dan Eden, Bryn Jackson, Brian Lovin, Max Stoiber, Glen Maddern, Mark Dalgleish, Dan Abrimov, The React team, Storybook, Figma, Interplay App
+
+And a special thank you goes out to our community of beta testers and their continued support!
 
 Further Reading:
 
@@ -178,3 +180,6 @@ Further Reading:
 [pure-ui]: https://rauchg.com/2015/pure-ui
 [interface]: https://spectrum.chat/thread/ac4cba39-0582-4b73-9582-9e863ed66346
 
+<!--
+> properties (of jsx) allow us to “narrow the gap between design and code”.
+-->
