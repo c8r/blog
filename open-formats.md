@@ -11,6 +11,8 @@ tags:
   file formats
   data structures
 ---
+<style>
+</style>
 
 # Open Formats
 
@@ -42,8 +44,8 @@ Additionally, you can add any arbitrary values to the theme that Lab doesn't cur
 ## Lab components
 
 Lab is focused on creating single element, style components.
-Each component is modeled after React components and conventions found in CSS-in-JS libraries.
-Each component is defined as a JSON object with *at least* the following properties: `name`, `type`, `style`, `props`, and `system`.
+Each component is modeled after React components and conventions found in CSS-in-JS libraries
+and is defined as a JSON object with *at least* the following properties: `name`, `type`, `style`, `props`, and `system`.
 
 ```js
 // example Lab component definition
