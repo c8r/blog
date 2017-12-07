@@ -30,7 +30,7 @@ But we'd like our tools to integrate with whatever front-end tech stack your tea
 You might’ve taken a peek into the `theme.json`, `lab.json`, or JSX files created with our apps, and, while the formats are modeled around similar component concepts to React, we want to remain somewhat agnostic to technology stacks.
 
 Today, we’re open sourcing [lab-cli][lab-cli] which is the module used in Lab to export to different React CSS-in-JS libraries
-and a command line utility for integrating Lab files with your teams build process.
+and a command line utility for integrating Lab files with your team's build process.
 
 ## Theme
 
