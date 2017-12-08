@@ -50,30 +50,32 @@ Lab is focused on creating single element, style components.
 Each component is modeled after React components and conventions found in CSS-in-JS libraries
 and is defined as a JSON object with *at least* the following properties: `name`, `type`, `style`, `props`, and `system`.
 
-```js
-// example Lab component definition
+
+*Example Lab component definition*
+
+```json
 {
-  name: 'Text',
-  type: 'div',
-  style: {
+  "name": "Text",
+  "type": "div",
+  "style": {
     lineHeight: 1.5
   },
-  props: {
+  "props": {
     fontSize: 2
   },
-  system: [
-    'textAlign',
-    'fontWeight'
+  "system": [
+    "textAlign",
+    "fontWeight"
   ],
-  examples: [
-    '<Text>Hello</Text>',
-    '<Text fontSize={4}>Hello</Text>',
-    '<Text align="center">Hello</Text>',
+  "examples": [
+    "<Text>Hello</Text>",
+    "<Text fontSize={4}>Hello</Text>",
+    "<Text align='center'>Hello</Text>",
   ],
-  description: 'A simple typographic primitive',
-  keywords: [
-    'typography',
-    'text'
+  "description": "A simple typographic primitive",
+  "keywords": [
+    "typography",
+    "text"
   ]
 }
 ```
@@ -138,6 +140,24 @@ In Lab, composite components are defined in JSON, with the following properties:
 - `jsx`: a JSX string representing the element structure of the component
 - `propTypes`: (planned) an object of prop type definitions, referenced by string
 
+*Example composite component definition*
+
+```json
+{
+  "name": "Card",
+  "imports": [
+    "Box",
+    "Image",
+    "Text"
+  ],
+  "jsx": "<Box><Image src='{props.image}' /><Text>{props.text}</Text></Box>",
+  "propTypes": {
+    "image": "string",
+    "text": "string"
+  }
+}
+```
+
 In Iso, each file works similarly, but the entire `lab.json` component library is available in scope, rather than requiring imports to be explicitly defined.
 The JSX file format uses [front-matter][front-matter] ([YAML][yaml] syntax at the beginning of the file) to define props for the component.
 Reserved prop names can be introduced to add additional functionality beyond static props.
@@ -154,6 +174,57 @@ Our rationale for using JSX syntax is:
 - In addition to the declarative nature of XML/HTML, JSX adds a familiar pattern for functional composition.
 
 Read more about the authors of JSX’s rationale here: [JSX Specification][jsx]
+
+*Example Compositor JSX file*
+
+```jsx
+---
+title: 'Hello'
+image: 'kitten.png'
+---
+<BackgroundImage src={props.image}>
+  <Box px={3} py={4}>
+    <Heading>{props.title}</Heading>
+  </Box>
+</BackgroundImage>
+```
+
+This same file can also be written in JSON format:
+
+```json
+{
+  "data": {
+    "title": "Hello",
+    "image": "kitten.png"
+  },
+  "content": [
+    {
+      "type": "BackgroundImage",
+      "props": {
+        "src": "{props.image}"
+      },
+      "children": [
+        {
+          "type": "Box",
+          "props": {
+            "px": 3,
+            "py": 4
+          },
+          "children": [
+            {
+              "type": "Heading",
+              "props": {},
+              "children": [
+                "{props.title}"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
 
 ## Just a start
 
