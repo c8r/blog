@@ -161,7 +161,7 @@ If other, better or more popular data formats arise, we will gladly support what
 
 We'd like to thank the following for sharing their ideas and helping inspire some of the thinking behind our tools:
 
-Nicole Sullivan, Nicholas Gallagher, Guillermo Rauch, Diana Mounter, Wilson Miner, Dan Eden, Bryn Jackson, Brian Lovin, Max Stoiber, Glen Maddern, Mark Dalgleish, Dan Abrimov, The React team, Storybook, Figma, Interplay App
+Nicole Sullivan, Nicholas Gallagher, Guillermo Rauch, Diana Mounter, Wilson Miner, Dan Eden, Bryn Jackson, Brian Lovin, Max Stoiber, Glen Maddern, Mark Dalgleish, Dan Abramov, The React team, Storybook, Figma, Interplay App
 
 And a special thank you goes out to our community of beta testers and their continued support!
 
