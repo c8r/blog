@@ -58,10 +58,10 @@ and is defined as a JSON object with *at least* the following properties: `name`
   "name": "Text",
   "type": "div",
   "style": {
-    lineHeight: 1.5
+    "lineHeight": 1.5
   },
   "props": {
-    fontSize: 2
+    "fontSize": 2
   },
   "system": [
     "textAlign",
