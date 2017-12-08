@@ -12,6 +12,9 @@ tags:
   data structures
 ---
 <style>
+.container-lg {
+  max-width: 768px !important;
+}
 </style>
 
 # Open Formats
