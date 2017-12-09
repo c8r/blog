@@ -25,6 +25,7 @@ twitter:
       flex: 'auto',
       maxWidth: 768,
     }}>
+    <Title>Blog</Title>
     {options.pages
       .filter(page => page.data && !!page.data.title && !!page.data.created)
       .map(page => (
@@ -36,11 +37,9 @@ twitter:
               {page.data.title}
             </Link>
           </Heading>
-          {page.data.excerpt && (
-            <Text>
-              {page.data.excerpt}
-            </Text>
-          )}
+          <Text>
+            {page.data.created}
+          </Text>
         </Box>
       ))
     }

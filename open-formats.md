@@ -1,7 +1,7 @@
 ---
 layout: layout
 title: Open Formats
-created: '12-06-2017'
+created: '12-11-2017'
 author: Brent Jackson
 publication: Compositor
 canonicalURL: https://compositor.io/blog/open-formats/
