@@ -27,14 +27,14 @@ twitter:
       flex: 'auto',
       maxWidth: 768
     }}>
+    {props.children}
     {props.created && (
-      <Text fontSize={0}>
+      <Text fontSize={0} mt={5}>
         <Caps>
-          {props.author} | Posted on {props.created}
+          Posted by {props.author} on {props.created}
         </Caps>
       </Text>
     )}
-    {props.children}
   </Container>
   <MegaFooter />
 </Flex>
