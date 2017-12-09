@@ -1,6 +1,7 @@
 ---
+layout: layout
 title: Open Formats
-created: '12-06-2012'
+created: '12-06-2017'
 author: Brent Jackson
 publication: Compositor
 canonicalURL: https://compositor.io/blog/open-formats/
@@ -10,12 +11,8 @@ tags:
   development
   file formats
   data structures
+xexcerpt: At Compositor, we want you to have complete control over the things you create with our tools. One way we’re trying to do this is by using open and transparent data formats and offering open source tools to integrate with our apps.
 ---
-<style>
-.container-lg {
-  max-width: 768px !important;
-}
-</style>
 
 # Open Formats
 
@@ -163,7 +160,7 @@ The JSX file format uses [front-matter][front-matter] ([YAML][yaml] syntax at th
 Reserved prop names can be introduced to add additional functionality beyond static props.
 Currently, IMPORTS is used to explicitly define imports that are not included in the `lab.json` file.
 
-By default, each Iso file is a pure component and helps encourage some of the ideas presented in Guillermo Rauch’s Pure UI article.
+By default, each Iso file is a pure component and helps encourage some of the ideas presented in Guillermo Rauch’s [Pure UI][pure-ui] article.
 
 Our rationale for using JSX syntax is:
 
@@ -256,6 +253,3 @@ Further Reading:
 [pure-ui]: https://rauchg.com/2015/pure-ui
 [interface]: https://spectrum.chat/thread/ac4cba39-0582-4b73-9582-9e863ed66346
 
-<!--
-> properties (of jsx) allow us to “narrow the gap between design and code”.
--->

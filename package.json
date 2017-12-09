@@ -4,6 +4,9 @@
   "version": "1.0.0",
   "description": "Writing from the team at Compositor",
   "scripts": {
+    "test": "which gen",
+    "start": "gen . -Dop 8080",
+    "build": "gen . -d docs",
     "publish": "echo \"requires token from medium.com\"",
     "_publish": "markdown-to-medium"
   },
@@ -15,6 +18,17 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@compositor/gen": "^1.0.0-0",
     "markdown-to-medium": "^1.4.1"
+  },
+  "gen": {
+    "markdownProps": {
+      "h1": {
+        "mb": 4
+      },
+      "hr": {
+        "my": 5
+      }
+    }
   }
 }
