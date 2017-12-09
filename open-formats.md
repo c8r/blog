@@ -11,7 +11,11 @@ tags:
   development
   file formats
   data structures
-xexcerpt: At Compositor, we want you to have complete control over the things you create with our tools. One way we’re trying to do this is by using open and transparent data formats and offering open source tools to integrate with our apps.
+twitter:
+  card: summary
+  site: '@getcompositor'
+  title: Open Formats | Compositor Blog
+  image: https://compositor.io/logo/dist/compositor.png
 ---
 
 # Open Formats

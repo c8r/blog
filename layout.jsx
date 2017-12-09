@@ -1,6 +1,7 @@
 ---
 title: Compositor Blog
 og:
+  title: Compositor Blog
   image: https://compositor.io/logo/dist/compositor.png
 twitter:
   card: summary
