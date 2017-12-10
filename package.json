@@ -7,8 +7,7 @@
     "test": "which gen",
     "start": "gen -Dop 8080",
     "build": "gen -d docs",
-    "publish": "echo \"requires token from medium.com\"",
-    "_publish": "markdown-to-medium"
+    "publish": "markdown-to-medium"
   },
   "author": "Brent Jackson",
   "contributors": [
