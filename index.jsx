@@ -23,26 +23,32 @@ twitter:
     py={4}
     style={{
       flex: 'auto',
-      maxWidth: 768,
     }}>
-    <Title>Blog</Title>
-    {options.pages
-      .filter(page => page.data && !!page.data.title && !!page.data.created)
-      .map(page => (
-        <Box key={page.data.title} my={4}>
-          <Heading mb={3}>
-            <Link
-              color='inherit'
-              href={page.name}>
-              {page.data.title}
-            </Link>
-          </Heading>
-          <Text>
-            {page.data.created}
-          </Text>
-        </Box>
-      ))
-    }
+    <Flex align='center' wrap>
+      <Box w={[ 1/4, 1/3, 1/2 ]}>
+        <Logo width={1} />
+      </Box>
+      <Box w={[ 3/4, 2/3, 1/2 ]} py={5}>
+        <Title>Compositor Blog</Title>
+        {options.pages
+          .filter(page => page.data && !!page.data.title && !!page.data.created)
+          .map(page => (
+            <Box key={page.data.title} my={4}>
+              <Heading mb={3}>
+                <Link
+                  color='inherit'
+                  href={page.name}>
+                  {page.data.title}
+                </Link>
+              </Heading>
+              <Text>
+                {page.data.created}
+              </Text>
+            </Box>
+          ))
+        }
+      </Box>
+    </Flex>
   </Container>
   <MegaFooter />
 </Flex>
