@@ -60,8 +60,9 @@
     },
     {
       "name": "Text",
-      "type": "div",
+      "type": "p",
       "props": {
+        "m": 0,
         "fontSize": null
       },
       "style": {},
@@ -455,11 +456,12 @@
       "name": "NavBar",
       "imports": [
         "Flex",
+        "Container",
         "Box",
         "Logo",
         "NavLink"
       ],
-      "jsx": "<header>\n  <Flex\n    align=\"center\"\n    wrap\n    px={3}\n    py={3}>\n    <NavLink ml={-2} href='https://compositor.io'>\n      <Logo />\n      Compositor\n    </NavLink>\n    <Box mx=\"auto\" />\n    {props.children}\n  </Flex>\n</header>",
+      "jsx": "<header>\n  <Container><Flex\n    align=\"center\"\n    wrap\n    px={0}\n    py={3}>\n    <NavLink ml={-2} href='https://compositor.io'>\n      <Logo />\n      Compositor\n    </NavLink>\n    <Box mx=\"auto\" />\n    {props.children}\n  </Flex></Container>\n</header>",
       "examples": [
         "<NavBar>\n  <a>\n    Features\n  </a>\n</NavBar>"
       ],

@@ -27,7 +27,9 @@ twitter:
       flex: 'auto',
       maxWidth: 768
     }}>
-    {props.children}
+    <article>
+      {props.children}
+    </article>
     {props.created && (
       <Text fontSize={0} mt={5}>
         <Caps>
