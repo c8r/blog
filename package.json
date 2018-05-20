@@ -4,9 +4,8 @@
   "version": "1.0.0",
   "description": "Writing from the team at Compositor",
   "scripts": {
-    "test": "which gen",
-    "start": "gen -Dop 8080",
-    "build": "gen -d docs",
+    "start": "",
+    "build": "",
     "publish": "markdown-to-medium"
   },
   "author": "Brent Jackson",
@@ -19,15 +18,5 @@
   "devDependencies": {
     "@compositor/gen": "^1.0.0-2",
     "markdown-to-medium": "^1.4.1"
-  },
-  "gen": {
-    "markdownProps": {
-      "h1": {
-        "mb": 4
-      },
-      "hr": {
-        "my": 5
-      }
-    }
   }
 }
