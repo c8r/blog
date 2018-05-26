@@ -1,13 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {
+  ThemeProvider,
   Flex,
   Box,
   Container,
   NavBar,
   NavLink,
-  MegaFooter,
-  GA
-} from '../lab'
+} from '@compositor/mono'
 import { Logo } from '@compositor/logo'
 
 export default class App extends React.Component {
@@ -15,49 +15,19 @@ export default class App extends React.Component {
     const { render, routes } = this.props
 
     return (
-      <Flex>
-        <Box flex='none' width={256} bg='tomato'>
-          <Logo size={48} />
-        </Box>
-        <Box width={1}>
-          <Container
-            width={1}
-            pt={4}
-            pb={6}
-            style={{
-              flex: 'auto',
-              maxWidth: 768
-            }}>
-            {render()}
-          </Container>
-        </Box>
-      </Flex>
-    )
-
-    return (
-      <Flex
-        flexDirection="column"
-        style={{
-          minHeight: '100vh'
-        }}>
+      <ThemeProvider>
         <NavBar>
-          <NavLink href='https://compositor.io/blog/'>
-            Blog
-          </NavLink>
+          <NavLink is={Link} to='/'>Blog</NavLink>
         </NavBar>
         <Container
-          width={1}
+          maxWidth={768}
           pt={4}
-          pb={6}
-          style={{
-            flex: 'auto',
-            maxWidth: 768
-          }}>
-          {render()}
+          pb={6}>
+          {render({
+            routes
+          })}
         </Container>
-        <MegaFooter />
-        <GA />
-      </Flex>
+      </ThemeProvider>
     )
   }
 }

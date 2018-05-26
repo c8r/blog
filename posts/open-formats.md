@@ -1,6 +1,6 @@
 ---
-layout: layout
 title: Open Formats
+slug: open-formats
 created: '12-11-2017'
 author: Brent Jackson
 publication: Compositor
