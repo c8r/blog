@@ -7,6 +7,7 @@ import {
   Container,
   NavBar,
   NavLink,
+  GA,
 } from '@compositor/mono'
 import { Logo } from '@compositor/logo'
 import styled from 'styled-components'
@@ -36,6 +37,7 @@ export default class App extends React.Component {
           <Box py={5}>
           </Box>
         </Typography>
+        <GA />
       </ThemeProvider>
     )
   }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Pre } from '@compositor/mono'
 import posts from '../posts'
 
 const routes = posts.map(post => ({
@@ -22,10 +23,17 @@ export default class Post extends React.Component {
       return false
     }
 
-    const { Component } = post
+    const {
+      Component,
+      created,
+      author
+    } = post
 
     return (
-      <Component />
+      <React.Fragment>
+        <Component />
+        <Pre my={4}>{created} {author}</Pre>
+      </React.Fragment>
     )
   }
 }
