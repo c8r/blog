@@ -9,6 +9,11 @@ import {
   NavLink,
 } from '@compositor/mono'
 import { Logo } from '@compositor/logo'
+import styled from 'styled-components'
+
+const Typography = styled('div')([], {
+  lineHeight: 1.625
+})
 
 export default class App extends React.Component {
   render () {
@@ -16,17 +21,21 @@ export default class App extends React.Component {
 
     return (
       <ThemeProvider>
-        <NavBar>
-          <NavLink is={Link} to='/'>Blog</NavLink>
-        </NavBar>
-        <Container
-          maxWidth={768}
-          pt={4}
-          pb={6}>
-          {render({
-            routes
-          })}
-        </Container>
+        <Typography>
+          <NavBar>
+            <NavLink is={Link} to='/'>Blog</NavLink>
+          </NavBar>
+          <Container
+            maxWidth={768}
+            pt={4}
+            pb={6}>
+            {render({
+              routes
+            })}
+          </Container>
+          <Box py={5}>
+          </Box>
+        </Typography>
       </ThemeProvider>
     )
   }
