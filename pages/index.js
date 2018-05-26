@@ -7,15 +7,7 @@ import {
   Block,
   BlockLink
 } from '@compositor/mono'
-import IntroducingKit from '../posts/introducing-kit.md'
-import OpenFormats from '../posts/open-formats.md'
-
-const posts = [
-  IntroducingKit,
-  OpenFormats,
-].map(Post => ({
-  ...Post.defaultProps
-}))
+import posts from '../posts'
 
 export default ({
   routes

@@ -24,7 +24,7 @@
     "@comp/md-loader": "^1.0.0-3",
     "@compositor/gen": "^1.0.0-2",
     "@compositor/logo": "^1.3.5",
-    "@compositor/mono": "^1.0.0-5",
+    "@compositor/mono": "^1.0.0-6",
     "@compositor/x0": "^5.0.0-3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",

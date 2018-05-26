@@ -1,1 +1,5 @@
-export { MD as default } from '@compositor/mono'
+import { MD } from '@compositor/mono'
+
+export default {
+  ...MD
+}
