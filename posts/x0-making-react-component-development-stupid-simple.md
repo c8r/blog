@@ -18,7 +18,7 @@ twitter:
   title: 'x0: Making React Component Development Stupid Simple | Compositor Blog'
   image: https://compositor.io/logo/dist/compositor.png
 excerpt:
-  We're big fans of the KISS principle (Keep It Simple, Stupid) at Compositor,
+  We're big fans of the KISS principle at Compositor,
   and we think anything that poses a barrier to the creative process can really affect the quality of the work you do.
 ---
 
