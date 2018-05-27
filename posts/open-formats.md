@@ -19,7 +19,6 @@ twitter:
 excerpt:
   At Compositor, we want you to have complete control over the things you create with our tools.
   One way we’re trying to do this is by using open and transparent data formats and offering open source tools to integrate with our apps.
-
 ---
 
 # Open Formats
