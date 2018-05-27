@@ -13,5 +13,8 @@ const posts = req.keys()
     }
   })
   .filter(post => !post.draft)
+  .sort((a, b) => {
+    return a.created > b.created ? -1 : 1
+  })
 
 export default posts

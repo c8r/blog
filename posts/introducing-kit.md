@@ -1,8 +1,8 @@
 ---
-draft: true
+draft: false
 title: Introducing Kit
 slug: introducing-kit
-created: '05-26-2018'
+created: 2018-05-29
 author: Brent Jackson
 publication: Compositor
 canonicalURL: https://compositor.io/blog/introducing-kit/
@@ -39,13 +39,13 @@ creating documentation, and writing tests,
 with a minimal amount of effort to set up and flexible enough to integrate with any existing React setup.
 
 This line of thinking led us to create [Kit][kit], a suite of tools for developing, documenting, and testing React components.
-Kit consists of many different utilities, but at its core is a set of utility components for creating documentation and demos and a command line interface for zero-config isolated development environments.
+Kit consists of several different modules, but at its core is a set of [utility components][components] for creating documentation and demos and a [command line interface][cli] for zero-config isolated development environments.
 
 ## Components Over Configuration
 
-Some React development tooling requires the overhead of learning custom APIs, configurations, and API-specific code.
+Some React development tooling requires the overhead of learning custom APIs, configurations, and library-specific code.
 With Kit, we've tried to follow our philosophy of **Components Over Configration**.
-Instead of increasing the API surface area of your project with custom configuration,
+Instead of increasing the API surface area of your project with library-specific APIs,
 we've tried to keep it simple by using an API most React developers will already be familiar with: components and props.
 
 Because the core part of Kit is built using React components,
@@ -54,13 +54,60 @@ whether you use [Create React App][cra], [Next.js][nextjs], [Gatsby][gatsby], or
 
 ## Library components
 
+![Screenshot of the Kit Library components](https://github.com/c8r/kit/raw/master/core/docs/images/library.png)
+
+Kit includes a set of components for displaying your components in isolation,
+with a grid view of multiple components at once, and detail views for testing components in isolation.
+
+```jsx
+import React from 'react'
+import { Library, Example, Detail } from '@compositor/kit'
+import { Heading, Button } from '../src'
+
+export default props =>
+  <Library>
+    <Example name='Heading'>
+      <Heading>Hello</Heading>
+    </Example>
+    <Example name='Button'>
+      <Button>Hello</Button>
+      <Detail>
+        <Button primary>Primary</Button>
+        <Button secondary>Primary</Button>
+        <Button large>Large</Button>
+        <Button small>Small</Button>
+      </Detail>
+    </Example>
+  </Library>
+```
+
 ## The Cartesian component
+
+![Screenshot of the Kit Cartesian component](https://github.com/c8r/kit/raw/master/core/docs/images/cartesian.png)
+
+The Kit Cartesian component can be used to display the [Cartesian product][cartesian-product] of a component's props.
 
 ## The XRay component
 
+![Screenshot of the Kit XRay component](https://github.com/c8r/kit/raw/master/core/docs/images/x-ray.png)
+
+The XRay component is a great way to visually debug CSS layout in your React components.
+It displays a customizable grid and outlines each HTML element to help ensure that your components are aligned as expected.
+
 ## The Kit CLI
 
+Kit also includes a zero-config development environment built on top of the Kit components and [Compositor x0][x0],
+allowing you to quickly spin up a component library view based on a folder of example components.
 
+```sh
+npm i -g @compositor/kit-cli
+```
+
+```sh
+kit examples --mode library
+```
+
+## More to Come
 
 <!--
 - simple setup
@@ -76,6 +123,10 @@ whether you use [Create React App][cra], [Next.js][nextjs], [Gatsby][gatsby], or
 -->
 
 [kit]: https://github.com/c8r/kit
+[components]: https://github.com/c8r/kit/tree/master/core
+[cli]: https://github.com/c8r/kit/tree/master/cli
 [cra]: https://github.com/facebook/create-react-app
 [nextjs]: https://github.com/zeit/next.js/
 [gatsby]: https://github.com/gatsbyjs/gatsby
+[cartesian-product]: https://en.wikipedia.org/wiki/Cartesian_product
+[x0]: https://compositor.io/x0

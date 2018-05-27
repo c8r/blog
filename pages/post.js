@@ -1,6 +1,7 @@
 import React from 'react'
 import { Pre } from '@compositor/mono'
 import posts from '../posts'
+import scope from './_scope'
 
 const routes = posts.map(post => ({
   path: '/' + post.slug
@@ -8,7 +9,6 @@ const routes = posts.map(post => ({
 
 export default class Post extends React.Component {
   static getInitialProps = async ({ path }) => {
-    console.log(path)
     return {
       path: '/:name',
       routes
@@ -31,8 +31,8 @@ export default class Post extends React.Component {
 
     return (
       <React.Fragment>
-        <Component />
-        <Pre my={4}>{created} {author}</Pre>
+        <Component scope={scope} />
+        <Pre my={4}>{created.toDateString()} | {author}</Pre>
       </React.Fragment>
     )
   }

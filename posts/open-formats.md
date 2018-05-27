@@ -1,7 +1,7 @@
 ---
 title: Open Formats
 slug: open-formats
-created: '12-11-2017'
+created: 2017-12-11
 author: Brent Jackson
 publication: Compositor
 canonicalURL: https://compositor.io/blog/open-formats/

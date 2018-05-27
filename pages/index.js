@@ -23,7 +23,7 @@ export default ({
         <Heading mb={2}>{post.title}</Heading>
         <Text mb={3}>{post.excerpt}</Text>
         <Pre>
-          {post.created}
+          {post.created.toDateString()}
           {' | '}
           {post.author}
         </Pre>
