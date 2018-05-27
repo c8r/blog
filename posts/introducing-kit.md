@@ -1,5 +1,5 @@
 ---
-draft: false
+draft: true
 title: Introducing Kit
 slug: introducing-kit
 created: 2018-05-29
@@ -21,31 +21,39 @@ twitter:
   title: Inroducing Kit | Compositor Blog
   image: https://compositor.io/logo/dist/compositor.png
 excerpt:
-  Kit is a suite of tools for developing, documenting, and testing React component libraries
+  While working on various React projects and component libraries, we started to feel that the currently available tools for developing, documenting, and testing components require a lot of boilerplate and overhead and can end up taking much more time than you'd expect.
 ---
 
 # Introducing Kit
 
+While working on various React projects and component libraries,
+we started to feel that the currently available tools for developing, documenting, and testing components
+require a lot of boilerplate and overhead and can end up taking much more time than you'd expect.
+
+<!--
 While working on various React projects and libraries,
 we felt that the currently available tools for developing, documenting, and testing components require
-a lot of setup and overhead, and don't always follow development principles like *Don't Repeat Yourself (DRY)*.
+a lot of setup and overhead,
+and don't always follow development principles like *Don't Repeat Yourself (DRY)*.
+-->
 
 We often end up with markdown files for documentation, custom API code for development environments,
 a separate code base for style guides and demos, and snapshot tests that are largely duplicative of the rest.
-While our source code was fairly DRY, the amount of code to support it seemed all over the place.
+While our source code was fairly [DRY][dry], the amount of code to support it seemed all over the place.
 
 We took a step back and thought, what if our component examples could be reused for developing components,
 creating documentation, and writing tests,
 with a minimal amount of effort to set up and flexible enough to integrate with any existing React setup.
 
-This line of thinking led us to create [Kit][kit], a suite of tools for developing, documenting, and testing React components.
+This line of thinking led us to create [Kit][kit], a suite of tools for developing, documenting, and testing React components,
+intended to maximize code reuse.
 Kit consists of several different modules, but at its core is a set of [utility components][components] for creating documentation and demos and a [command line interface][cli] for zero-config isolated development environments.
 
 ## Components Over Configuration
 
 Some React development tooling requires the overhead of learning custom APIs, configurations, and library-specific code.
 With Kit, we've tried to follow our philosophy of **Components Over Configration**.
-Instead of increasing the API surface area of your project with library-specific APIs,
+Instead of increasing the surface area of your project with library-specific APIs,
 we've tried to keep it simple by using an API most React developers will already be familiar with: components and props.
 
 Because the core part of Kit is built using React components,
@@ -107,19 +115,16 @@ npm i -g @compositor/kit-cli
 kit examples --mode library
 ```
 
+![Kit CLI demo](https://github.com/c8r/kit/raw/master/docs/demo.gif)
+
 ## More to Come
 
-<!--
-- simple setup
-- maximize code reuse
-  - developing, documenting, and testing
-    - components over configuration
-- minimal api surface area
-- works with any react setup
+We have a lot of ideas for how we can make Kit an even more useful set of tools for building and maintaining
+React component libraries, and we'd love to hear what you think.
+Hit us up on Twitter at [@getcompositor][twitter] or check out the [project on GitHub][kit] to get started
 
-- Library
-- XRay
-- Cartesian
+<!--
+- maximize code reuse
 -->
 
 [kit]: https://github.com/c8r/kit
@@ -130,3 +135,5 @@ kit examples --mode library
 [gatsby]: https://github.com/gatsbyjs/gatsby
 [cartesian-product]: https://en.wikipedia.org/wiki/Cartesian_product
 [x0]: https://compositor.io/x0
+[twitter]: https://twitter.com/getcompositor
+[dry]: https://en.wikipedia.org/wiki/Don't_repeat_yourself

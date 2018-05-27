@@ -1,5 +1,4 @@
 ---
-draft: false
 title: 'x0: Making React Component Development Stupid Simple'
 slug: x0-making-react-component-development-stupid-simple
 created: 2018-05-28
@@ -26,7 +25,7 @@ excerpt:
 
 # x0: Making React Component Development Stupid Simple
 
-We're big fans of the KISS principle (Keep It Simple, Stupid) at Compositor,
+We're big fans of the [KISS principle][kiss] at Compositor,
 and we think anything that poses a barrier to the creative process can really affect the quality of the work you do.
 We're also big fans of React (no surprise), which has ushered in a paradigm shift for UI design and development.
 
@@ -41,7 +40,7 @@ Even with the introduction of great tools like [Create React App][cra],
 getting started with an idea can require the proper setup and can slow down the creative process.
 
 We built [x0][x0] with these things in mind and really enjoy using x0 as a quick, no frills prototyping and development tool.
-With version 5, we've taken advantage of recent updates in the webpack ecosystem and made it even faster and easier to work with multiple components at once.
+With [version 5][v5], we've taken advantage of recent updates in the webpack ecosystem and made it even faster and easier to work with multiple components at once.
 
 x0 is based on the principle of smart defaults.
 Rather than duplicating code with boiler plates for React, Babel and webpack,
@@ -57,16 +56,15 @@ x0 components
 
 X0 now accepts a directory of React components as an entry point.
 Create a folder of components and pass it to the `x0` command;
-an isolated development server will start up in seconds
+an isolated development server will start up in seconds,
 creating routes based on the file names, with no config or custom setup required.
 Your components will automatically update in the browser with any code change thanks to webpack's hot module replacement feature.
 
 X0 also uses the new [webpack-serve][webpack-serve] module which is noticeably faster than the now deprecated webpack-dev-server.
 When you want to share what you've built with others, x0 lets you quickly export a static site, which can be pushed to GitHub or published to any CDN.
-The new x0 also supports Compositor JSX format, letting you quickly prototype component compositions with a common component library, without the overhead of building out a full component. We've also included MDX support for mixing markdown notes with components.
+The new x0 also supports [Compositor JSX][jsx] format, letting you quickly prototype component compositions with a common component library, without the overhead of building out a full component. We've also included [MDX][mdx] support for mixing markdown syntax with React components.
 
 We love using x0 as a quick and painless React development server, and we hope you will too.
-
 Get started with x0 now, or let use know what you think on Twitter [@getcompositor][twitter].
 
 - [x0 on GitHub][x0gh]
@@ -77,3 +75,7 @@ Get started with x0 now, or let use know what you think on Twitter [@getcomposit
 [twitter]: https://twitter.com/getcompositor
 [cra]: https://github.com/facebook/create-react-app
 [webpack-serve]: https://github.com/webpack-contrib/webpack-serve
+[kiss]: https://en.wikipedia.org/wiki/KISS_principle
+[v5]: https://github.com/c8r/x0/releases/tag/v5.0.0
+[jsx]: https://github.com/c8r/jsx-loader
+[mdx]: https://github.com/mdx-js/mdx

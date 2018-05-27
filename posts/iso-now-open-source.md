@@ -1,6 +1,6 @@
 ---
 draft: true
-title: 'Iso v0.1: Now Open Source'
+title: 'Iso v0.1'
 created: 2018-05-27
 slug: iso-now-open-source
 author: Brent Jackson
@@ -20,10 +20,10 @@ twitter:
   title: Iso v0.1 | Compositor Blog
   image: https://compositor.io/logo/dist/compositor.png
 excerpt:
-  Iso v0.1 is out and it's now open source
+  Iso v0.1
 ---
 
-# Iso v0.1: now Open source
+# Iso v0.1
 
 <!--
 
