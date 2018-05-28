@@ -30,13 +30,6 @@ While working on various React projects and component libraries,
 we started to feel that the currently available tools for developing, documenting, and testing components
 require a lot of boilerplate and overhead and can end up taking much more time than you'd expect.
 
-<!--
-While working on various React projects and libraries,
-we felt that the currently available tools for developing, documenting, and testing components require
-a lot of setup and overhead,
-and don't always follow development principles like *Don't Repeat Yourself (DRY)*.
--->
-
 We often end up with markdown files for documentation, custom API code for development environments,
 a separate code base for style guides and demos, and snapshot tests that are largely duplicative of the rest.
 While our source code was fairly [DRY][dry], the amount of code to support it seemed all over the place.
