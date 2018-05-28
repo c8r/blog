@@ -5,7 +5,7 @@
   "description": "Writing from the team at Compositor",
   "scripts": {
     "start": "x0 pages --open",
-    "build": "x0 build pages -d docs",
+    "build": "x0 build pages",
     "publish": "markdown-to-medium"
   },
   "dependencies": {
