@@ -18,14 +18,14 @@ twitter:
   title: 'x0: Making React Component Development Stupid Simple | Compositor Blog'
   image: https://compositor.io/logo/dist/compositor.png
 excerpt:
-  We're big fans of the KISS principle at Compositor,
+  We’re big fans of the KISS principle at Compositor,
   and we think anything that poses a barrier to the creative process can really affect the quality of the work you do.
 ---
 
 
 # x0: Making React Component Development Stupid Simple
 
-We're big fans of the [KISS principle][kiss] at Compositor,
+We’re big fans of the [KISS principle][kiss] at Compositor,
 and we think anything that poses a barrier to the creative process can really affect the quality of the work you do.
 We're also big fans of React (no surprise), which has ushered in a paradigm shift for UI design and development.
 
