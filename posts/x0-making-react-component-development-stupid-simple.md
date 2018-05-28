@@ -43,7 +43,7 @@ We built [x0][x0] with these things in mind and really enjoy using x0 as a quick
 With [version 5][v5], we've taken advantage of recent updates in the webpack ecosystem and made it even faster and easier to work with multiple components at once.
 
 x0 is based on the principle of smart defaults.
-Rather than duplicating code with boiler plates for React, Babel and webpack,
+Rather than duplicating boilerplate code for React, Babel and webpack,
 x0 is a batteries-included development tool with the most common settings enabled.
 
 ```sh
