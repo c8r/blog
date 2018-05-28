@@ -1,7 +1,7 @@
 ---
-layout: layout
 title: Open Formats
-created: '12-11-2017'
+slug: open-formats
+created: 2017-12-11
 author: Brent Jackson
 publication: Compositor
 canonicalURL: https://compositor.io/blog/open-formats/
@@ -16,6 +16,9 @@ twitter:
   site: '@getcompositor'
   title: Open Formats | Compositor Blog
   image: https://compositor.io/logo/dist/compositor.png
+excerpt:
+  At Compositor, we want you to have complete control over the things you create with our tools.
+  One way we’re trying to do this is by using open and transparent data formats and offering open source tools to integrate with our apps.
 ---
 
 # Open Formats

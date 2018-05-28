@@ -1,33 +1,59 @@
 {
   "name": "@compositor/blog",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0-0",
   "description": "Writing from the team at Compositor",
   "scripts": {
-    "test": "which gen",
-    "start": "gen -Dop 8080",
-    "build": "gen -d docs",
+    "start": "x0 pages --open",
+    "build": "x0 build pages",
     "publish": "markdown-to-medium"
   },
-  "author": "Brent Jackson",
+  "dependencies": {
+    "@comp/md-loader": "^1.0.0-3",
+    "@compositor/logo": "^1.3.5",
+    "@compositor/mono": "^1.0.0-10",
+    "@compositor/x0": "^5.0.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "markdown-to-medium": "^1.4.1",
+    "styled-components": "^3.3.0"
+  },
+  "author": "Compositor",
   "contributors": [
     "Adam Morse <adam@compositor.io>",
     "John Otander <john@compositor.io>",
     "Brent Jackson <jackson@compositor.io>"
   ],
   "license": "MIT",
-  "devDependencies": {
-    "@compositor/gen": "^1.0.0-2",
-    "markdown-to-medium": "^1.4.1"
-  },
-  "gen": {
-    "markdownProps": {
-      "h1": {
-        "mb": 4
+  "x0": {
+    "title": "Compositor Blog",
+    "basename": "/blog",
+    "meta": [
+      {
+        "name": "description",
+        "content": "Tools for Designers & Developers"
       },
-      "hr": {
-        "my": 5
+      {
+        "name": "twitter:card",
+        "content": "summary"
+      },
+      {
+        "name": "twitter:site",
+        "content": "@getcompositor"
+      },
+      {
+        "name": "twitter:title",
+        "content": "Compositor Blog"
+      },
+      {
+        "name": "twitter:description",
+        "content": "Tools for Designers and Developers"
+      },
+      {
+        "name": "twitter:image",
+        "content": "https://compositor.io/logo/dist/compositor.png"
       }
-    }
+    ]
   }
 }

@@ -1,4 +1,4 @@
 
 # Compositor Blog
 
-- [Open Formats](open-formats.md)
+https://compositor.io/blog
