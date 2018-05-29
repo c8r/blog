@@ -1,6 +1,5 @@
 ---
-draft: true
-title: Introducing Kit: Maximizing Code Reuse for Component Development, Documentation, and Testing
+title: 'Introducing Kit: Maximizing Code Reuse for Component Development, Documentation, and Testing'
 slug: introducing-kit
 created: 2018-05-29
 author: Brent Jackson
@@ -16,7 +15,9 @@ tags:
   documentation
   testing
 excerpt:
-  While working on various React projects and component libraries, we started to feel that the currently available tools for developing, documenting, and testing components require a lot of boilerplate and overhead and can end up taking much more time than you'd expect.
+  We’ve enjoyed watching the ecosystem of tools for developing React components evolve over the past few years.
+  In using some of these tools in our own projects,
+  we started to notice that many of them require a lot of custom setup and overhead.
 ---
 
 # Introducing Kit: Maximizing Code Reuse for Component Development, Documentation, and Testing
@@ -24,12 +25,6 @@ excerpt:
 We’ve enjoyed watching the ecosystem of tools for developing React components evolve over the past few years.
 In using some of these tools in our own projects,
 we started to notice that many of them require a lot of custom setup and overhead.
-
-<!--
-While working on various React projects and component libraries,
-we started to feel that the currently available tools for developing, documenting, and testing components
-require a lot of boilerplate and overhead and can end up taking much more time than you'd expect.
--->
 
 We often end up with markdown files for documentation, custom API code for development environments,
 a separate code base for style guides and demos, and snapshot tests that are largely duplicative of the rest.
@@ -45,7 +40,7 @@ Kit consists of several different modules, but at its core is a set of [utility 
 
 ## Components Over Configuration
 
-Some React development tooling requires the overhead of learning custom APIs, configurations, and library-specific code.
+Some React development tools require the overhead of learning custom APIs, configurations, and library-specific code.
 With Kit, we've tried to follow our philosophy of **Components Over Configration**.
 Instead of increasing the surface area of your project with library-specific APIs,
 we've tried to keep it simple by using an API most React developers will already be familiar with: components and props.
@@ -113,13 +108,10 @@ kit examples --mode library
 
 ## More to Come
 
-We have a lot of ideas for how we can make Kit an even more useful set of tools for building and maintaining
-React component libraries, and we'd love to hear what you think.
+Kit is still very much a work in progress,
+and we have a lot of ideas for how we can make this an even more useful set of tools for building and maintaining React component libraries.
+We'd love to hear what you think.
 Hit us up on Twitter at [@getcompositor][twitter] or check out the [project on GitHub][kit] to get started
-
-<!--
-- maximize code reuse
--->
 
 [kit]: https://github.com/c8r/kit
 [components]: https://github.com/c8r/kit/tree/master/core
