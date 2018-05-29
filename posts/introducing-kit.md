@@ -1,6 +1,6 @@
 ---
 draft: true
-title: Introducing Kit
+title: Introducing Kit: Maximizing Code Reuse for Component Development, Documentation, and Testing
 slug: introducing-kit
 created: 2018-05-29
 author: Brent Jackson
@@ -15,20 +15,21 @@ tags:
   development
   documentation
   testing
-twitter:
-  card: summary
-  site: '@getcompositor'
-  title: Inroducing Kit | Compositor Blog
-  image: https://compositor.io/logo/dist/compositor.png
 excerpt:
   While working on various React projects and component libraries, we started to feel that the currently available tools for developing, documenting, and testing components require a lot of boilerplate and overhead and can end up taking much more time than you'd expect.
 ---
 
-# Introducing Kit
+# Introducing Kit: Maximizing Code Reuse for Component Development, Documentation, and Testing
 
+We’ve enjoyed watching the ecosystem of tools for developing React components evolve over the past few years.
+In using some of these tools in our own projects,
+we started to notice that many of them require a lot of custom setup and overhead.
+
+<!--
 While working on various React projects and component libraries,
 we started to feel that the currently available tools for developing, documenting, and testing components
 require a lot of boilerplate and overhead and can end up taking much more time than you'd expect.
+-->
 
 We often end up with markdown files for documentation, custom API code for development environments,
 a separate code base for style guides and demos, and snapshot tests that are largely duplicative of the rest.
