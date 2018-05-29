@@ -65,7 +65,7 @@ When you want to share what you've built with others, x0 lets you quickly export
 The new x0 also supports [Compositor JSX][jsx] format, letting you quickly prototype component compositions with a common component library, without the overhead of building out a full component. We've also included [MDX][mdx] support for mixing markdown syntax with React components.
 
 We love using x0 as a quick and painless React development server, and we hope you will too.
-Get started with x0 now, or let use know what you think on Twitter [@getcompositor][twitter].
+Get started with x0 now, or let us know what you think on Twitter [@getcompositor][twitter].
 
 - [x0 on GitHub][x0gh]
 
