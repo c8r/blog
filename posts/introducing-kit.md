@@ -114,6 +114,8 @@ and we have a lot of ideas for how we can make this an even more useful set of t
 We'd love to hear what you think.
 Hit us up on Twitter at [@getcompositor][twitter] or check out the [project on GitHub][kit] to get started
 
+Thanks to [Diana Mounter](https://mobile.twitter.com/broccolini), [Kent C. Dodds](https://mobile.twitter.com/kentcdodds), and all our supporters!
+
 [kit]: https://github.com/c8r/kit
 [components]: https://github.com/c8r/kit/tree/master/core
 [cli]: https://github.com/c8r/kit/tree/master/cli
