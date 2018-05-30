@@ -15,17 +15,14 @@ tags:
   documentation
   testing
 excerpt:
-  We’ve enjoyed watching the ecosystem of tools for developing React components evolve over the past few years.
-  In using some of these tools in our own projects,
-  we started to notice that many of them require a lot of custom setup and overhead.
+  The ecosystem of tools for developing React components has flourished over the past few years.
+  While we’ve been excited by all the innovation in the space, we felt that many of these tools require a lot of custom setup and overhead.
 ---
 
 # Introducing Kit: Maximizing Code Reuse for Component Development, Documentation, and Testing
 
-We’ve enjoyed watching the ecosystem of tools for developing React components evolve over the past few years.
-In using some of these tools in our own projects,
-we started to notice that many of them require a lot of custom setup and overhead.
-
+The ecosystem of tools for developing React components has flourished over the past few years.
+While we’ve been excited by all the innovation in the space, we felt that many of these tools require a lot of custom setup and overhead.
 We often end up with markdown files for documentation, custom API code for development environments,
 a separate code base for style guides and demos, and snapshot tests that are largely duplicative of the rest.
 While our source code was fairly [DRY][dry], the amount of code to support it seemed all over the place.
@@ -48,6 +45,8 @@ we've tried to keep it simple by using an API most React developers will already
 Because the core part of Kit is built using React components,
 Kit components will work in virtually any React application setup,
 whether you use [Create React App][cra], [Next.js][nextjs], [Gatsby][gatsby], or a custom setup.
+
+- devtools and debugging work as expected
 
 ## Library components
 
