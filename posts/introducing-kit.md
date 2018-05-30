@@ -38,13 +38,15 @@ Kit consists of several different modules, but at its core is a set of [utility 
 ## Components Over Configuration
 
 Some React development tools require the overhead of learning custom APIs, configurations, and library-specific code.
-With Kit, we've tried to follow our philosophy of **Components Over Configration**.
+With Kit, we’ve tried to follow our philosophy of **Components Over Configration**.
 Instead of increasing the surface area of your project with library-specific APIs,
-we've tried to keep it simple by using an API most React developers will already be familiar with: components and props.
+we’ve tried to keep it simple by using an API most React developers will already be familiar with: components and props.
 
 Because the core part of Kit is built using React components,
 Kit components will work in virtually any React application setup,
 whether you use [Create React App][cra], [Next.js][nextjs], [Gatsby][gatsby], or a custom setup.
+This also means that using the React devtools and debugging workflows that you’re already familiar with should work as expected,
+and that you can write reusable code that isn’t tightly coupled with any particular framework or library.
 
 - devtools and debugging work as expected
 
