@@ -1,5 +1,5 @@
 ---
-title: 'Introducing Kit: Components over Configuration'
+title: 'Introducing Kit'
 slug: introducing-kit
 created: 2018-05-29
 author: Brent Jackson
@@ -19,7 +19,7 @@ excerpt:
   While we’ve been excited by all the innovation in the space, we felt that many of these tools require a lot of custom setup and overhead.
 ---
 
-# Introducing Kit: Components over Configuration
+# Introducing Kit
 
 The ecosystem of tools for developing React components has flourished over the past few years.
 While we’ve been excited by all the innovation in the space, we felt that many of these tools require a lot of custom setup and overhead.
