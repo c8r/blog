@@ -1,7 +1,7 @@
 ---
 title: 'Introducing Kit'
 slug: introducing-kit
-created: 2018-05-29
+created: 2018-05-30
 author: Brent Jackson
 publication: Compositor
 canonicalURL: https://compositor.io/blog/introducing-kit/
