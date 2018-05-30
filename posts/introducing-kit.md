@@ -1,6 +1,5 @@
 ---
-draft: true
-title: Introducing Kit
+title: 'Introducing Kit: Components over Configuration'
 slug: introducing-kit
 created: 2018-05-29
 author: Brent Jackson
@@ -15,21 +14,15 @@ tags:
   development
   documentation
   testing
-twitter:
-  card: summary
-  site: '@getcompositor'
-  title: Inroducing Kit | Compositor Blog
-  image: https://compositor.io/logo/dist/compositor.png
 excerpt:
-  While working on various React projects and component libraries, we started to feel that the currently available tools for developing, documenting, and testing components require a lot of boilerplate and overhead and can end up taking much more time than you'd expect.
+  The ecosystem of tools for developing React components has flourished over the past few years.
+  While we’ve been excited by all the innovation in the space, we felt that many of these tools require a lot of custom setup and overhead.
 ---
 
-# Introducing Kit
+# Introducing Kit: Components over Configuration
 
-While working on various React projects and component libraries,
-we started to feel that the currently available tools for developing, documenting, and testing components
-require a lot of boilerplate and overhead and can end up taking much more time than you'd expect.
-
+The ecosystem of tools for developing React components has flourished over the past few years.
+While we’ve been excited by all the innovation in the space, we felt that many of these tools require a lot of custom setup and overhead.
 We often end up with markdown files for documentation, custom API code for development environments,
 a separate code base for style guides and demos, and snapshot tests that are largely duplicative of the rest.
 While our source code was fairly [DRY][dry], the amount of code to support it seemed all over the place.
@@ -44,14 +37,16 @@ Kit consists of several different modules, but at its core is a set of [utility 
 
 ## Components Over Configuration
 
-Some React development tooling requires the overhead of learning custom APIs, configurations, and library-specific code.
-With Kit, we've tried to follow our philosophy of **Components Over Configration**.
+Some React development tools require the overhead of learning custom APIs, configurations, and library-specific code.
+With Kit, we’ve tried to follow our philosophy of **Components Over Configration**.
 Instead of increasing the surface area of your project with library-specific APIs,
-we've tried to keep it simple by using an API most React developers will already be familiar with: components and props.
+we’ve tried to keep it simple by using an API most React developers will already be familiar with: components and props.
 
 Because the core part of Kit is built using React components,
 Kit components will work in virtually any React application setup,
 whether you use [Create React App][cra], [Next.js][nextjs], [Gatsby][gatsby], or a custom setup.
+This also means that using the React devtools and debugging workflows that you’re already familiar with should work as expected,
+and that you can write reusable code that isn’t tightly coupled with any particular framework or library.
 
 ## Library components
 
@@ -95,6 +90,8 @@ The Kit Cartesian component can be used to display the [Cartesian product][carte
 The XRay component is a great way to visually debug CSS layout in your React components.
 It displays a customizable grid and outlines each HTML element to help ensure that your components are aligned as expected.
 
+We’re still adding new components to Kit, so be sure to [check out the repo][kit] for a complete list of what’s available.
+
 ## The Kit CLI
 
 Kit also includes a zero-config development environment built on top of the Kit components and [Compositor x0][x0],
@@ -112,13 +109,10 @@ kit examples --mode library
 
 ## More to Come
 
-We have a lot of ideas for how we can make Kit an even more useful set of tools for building and maintaining
-React component libraries, and we'd love to hear what you think.
+Kit is still very much a work in progress,
+and we have a lot of ideas for how we can make this an even more useful set of tools for building and maintaining React component libraries.
+We'd love to hear what you think.
 Hit us up on Twitter at [@getcompositor][twitter] or check out the [project on GitHub][kit] to get started
-
-<!--
-- maximize code reuse
--->
 
 [kit]: https://github.com/c8r/kit
 [components]: https://github.com/c8r/kit/tree/master/core
