@@ -35,7 +35,7 @@ This line of thinking led us to create [Kit][kit], a suite of tools for developi
 intended to maximize code reuse.
 Kit consists of several different modules, but at its core is a set of [utility components][components] for creating documentation and demos and a [command line interface][cli] for zero-config isolated development environments.
 
-## Components Over Configuration
+## Components over Configuration
 
 Some React development tools require the overhead of learning custom APIs, configurations, and library-specific code.
 With Kit, we’ve tried to follow our philosophy of **Components Over Configration**.
@@ -48,7 +48,7 @@ whether you use [Create React App][cra], [Next.js][nextjs], [Gatsby][gatsby], or
 This also means that using the React devtools and debugging workflows that you’re already familiar with should work as expected,
 and that you can write reusable code that isn’t tightly coupled with any particular framework or library.
 
-## Library components
+## Library Components
 
 ![Screenshot of the Kit Library components](https://github.com/c8r/kit/raw/master/core/docs/images/library.png)
 
@@ -77,13 +77,13 @@ export default props =>
   </Library>
 ```
 
-## The Cartesian component
+## The Cartesian Component
 
 ![Screenshot of the Kit Cartesian component](https://github.com/c8r/kit/raw/master/core/docs/images/cartesian.png)
 
 The Kit Cartesian component can be used to display the [Cartesian product][cartesian-product] of a component's props.
 
-## The XRay component
+## The XRay Component
 
 ![Screenshot of the Kit XRay component](https://github.com/c8r/kit/raw/master/core/docs/images/x-ray.png)
 
