@@ -41,7 +41,7 @@ export default class Post extends React.Component {
     return (
       <React.Fragment>
         <Component scope={scope} />
-        <Pre my={4}>{created.toDateString()} | {author}</Pre>
+        <Pre my={4}>{created.toLocaleString('en-US', { timeZone: 'UTC' })} | {author}</Pre>
       </React.Fragment>
     )
   }
