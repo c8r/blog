@@ -90,6 +90,8 @@ The Kit Cartesian component can be used to display the [Cartesian product][carte
 The XRay component is a great way to visually debug CSS layout in your React components.
 It displays a customizable grid and outlines each HTML element to help ensure that your components are aligned as expected.
 
+We’re still adding new components to Kit, so be sure to [check out the repo][kit] for a complete list of what’s available.
+
 ## The Kit CLI
 
 Kit also includes a zero-config development environment built on top of the Kit components and [Compositor x0][x0],
