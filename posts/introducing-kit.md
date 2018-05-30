@@ -1,5 +1,5 @@
 ---
-title: 'Introducing Kit: Maximizing Code Reuse for Component Development, Documentation, and Testing'
+title: 'Introducing Kit: Components over Configuration'
 slug: introducing-kit
 created: 2018-05-29
 author: Brent Jackson
@@ -19,7 +19,7 @@ excerpt:
   While we’ve been excited by all the innovation in the space, we felt that many of these tools require a lot of custom setup and overhead.
 ---
 
-# Introducing Kit: Maximizing Code Reuse for Component Development, Documentation, and Testing
+# Introducing Kit: Components over Configuration
 
 The ecosystem of tools for developing React components has flourished over the past few years.
 While we’ve been excited by all the innovation in the space, we felt that many of these tools require a lot of custom setup and overhead.
@@ -47,8 +47,6 @@ Kit components will work in virtually any React application setup,
 whether you use [Create React App][cra], [Next.js][nextjs], [Gatsby][gatsby], or a custom setup.
 This also means that using the React devtools and debugging workflows that you’re already familiar with should work as expected,
 and that you can write reusable code that isn’t tightly coupled with any particular framework or library.
-
-- devtools and debugging work as expected
 
 ## Library components
 
