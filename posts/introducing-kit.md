@@ -69,7 +69,7 @@ export default props =>
       <Button>Hello</Button>
       <Detail>
         <Button primary>Primary</Button>
-        <Button secondary>Primary</Button>
+        <Button secondary>Secondary</Button>
         <Button large>Large</Button>
         <Button small>Small</Button>
       </Detail>
