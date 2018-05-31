@@ -38,7 +38,7 @@ Kit consists of several different modules, but at its core is a set of [utility 
 ## Components over Configuration
 
 Some React development tools require the overhead of learning custom APIs, configurations, and library-specific code.
-With Kit, we’ve tried to follow our philosophy of **Components Over Configration**.
+With Kit, we’ve tried to follow our philosophy of **Components Over Configuration**.
 Instead of increasing the surface area of your project with library-specific APIs,
 we’ve tried to keep it simple by using an API most React developers will already be familiar with: components and props.
 
