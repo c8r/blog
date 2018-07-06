@@ -50,7 +50,7 @@ and that you can write reusable code that isn’t tightly coupled with any parti
 
 ## Library Components
 
-![Screenshot of the Kit Library components](https://github.com/c8r/kit/raw/master/core/docs/images/library.png)
+![Screenshot of the Kit Library components](https://github.com/c8r/kit/raw/master/docs/images/library.png)
 
 Kit includes a set of components for displaying your components in isolation,
 with a grid view of multiple components at once, and detail views for testing components in isolation.
@@ -79,13 +79,13 @@ export default props =>
 
 ## The Cartesian Component
 
-![Screenshot of the Kit Cartesian component](https://github.com/c8r/kit/raw/master/core/docs/images/cartesian.png)
+![Screenshot of the Kit Cartesian component](https://github.com/c8r/kit/raw/master/docs/images/cartesian.png)
 
 The Kit Cartesian component can be used to display the [Cartesian product][cartesian-product] of a component's props.
 
 ## The XRay Component
 
-![Screenshot of the Kit XRay component](https://github.com/c8r/kit/raw/master/core/docs/images/x-ray.png)
+![Screenshot of the Kit XRay component](https://github.com/c8r/kit/raw/master/docs/images/x-ray.png)
 
 The XRay component is a great way to visually debug CSS layout in your React components.
 It displays a customizable grid and outlines each HTML element to help ensure that your components are aligned as expected.
@@ -105,7 +105,7 @@ npm i -g @compositor/kit-cli
 kit examples --mode library
 ```
 
-![Kit CLI demo](https://github.com/c8r/kit/raw/master/docs/demo.gif)
+![Kit CLI demo](https://compositor.io/kit/demo.gif)
 
 ## More to Come
 
